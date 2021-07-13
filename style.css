@@ -103,3 +103,43 @@ h1 {
 .des-course h3, .des-course p {
     margin: 20px 0px;
 }
+
+/* ---------media query--------- */
+
+@media screen and (min-width:450px) and (max-width:768px) {
+    .player, .course {
+        width: 100%;
+    }
+    .player-section {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-blog {
+        grid-template-columns: 1fr;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .course-grid {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .player, .course {
+        width: 100%;
+    }
+    .player-section {
+        grid-template-columns: 1fr;
+    }
+    .grid-blog {
+        grid-template-columns: 1fr;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .course-grid {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
